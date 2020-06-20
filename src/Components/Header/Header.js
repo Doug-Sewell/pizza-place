@@ -1,5 +1,7 @@
 import React from 'react';
 import classes from './Header.module.css';
+
+import Button from '../../UI/Button/Button';
 //Signage phto for background here: https://www.pexels.com/photo/red-pizza-neon-signage-2914550/
 
 const header = props => {
@@ -19,6 +21,9 @@ const header = props => {
                     <span className={classes.HeaderPrimaryMain}>{props.primary}</span>
                     <span className={classes.HeaderPrimarySub}>{props.secondary}</span>
                 </h1>
+                <div className={classes.animatedBtn}>
+                    <Button>See Our Pizzas!</Button>
+                </div>
             </div>
         </header>
     )
