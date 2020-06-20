@@ -10,7 +10,11 @@ class App extends Component {
       headerPrimary: 'Pizza Place',
       headerSecondary: 'Making Great Pizza',
       backgroundImage: BackgroundPhoto,
-      gradient:['to bottom','rgba(139,0,0,0.9)','rgba(136, 65, 65, 0.9)']
+      gradient: [
+        'to bottom',
+        'rgba(139,0,0,0.9)',
+        'rgba(136, 65, 65, 0.9)'
+      ]
     }
 
   }
