@@ -19,14 +19,14 @@
     display:block;
 
     backface-visibility: hidden;
-    margin-bottom:60px;
+    margin-bottom:6rem;
 }
 
 .HeaderPrimaryMain {
     display:block;
-    font-size:60px;
+    font-size:6rem;
     font-weight:400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -40,25 +40,25 @@
 
 .HeaderPrimarySub {
     display:block;
-    letter-spacing:28.9px;
-    font-size:20px;
+    letter-spacing: 2.9rem;
+    font-size:2rem;
     font-weight:700;
     animation:moveInRight 1s ease-out;
 }
 
 .animatedBtn {
-    animation:moveInButton .5s ease-out 1s;
+    animation:moveInButton .5s linear 1s;
     animation-fill-mode: backwards;
 }
 
 @keyframes moveInLeft {
     0% {
         opacity:0;
-        transform:translateX(100px);
+        transform:translateX(10rem);
     }
 
     80% {
-        transform:translateX(-10px);
+        transform:translateX(-1rem);
     }
 
     100% {
@@ -70,11 +70,11 @@
 @keyframes moveInRight {
     0% {
         opacity:0;
-        transform:translateX(-100px);
+        transform:translateX(-10rem);
     }
 
     80% {
-        transform:translateX(10px);
+        transform:translateX(1rem);
     }
 
     100% {
@@ -86,11 +86,11 @@
 @keyframes moveInButton {
     0% {
         opacity:0;
-        transform:translateY(30px);
+        transform:translateY(3rem);
     }
 
     80%{
-        transform:translateY(-10px);
+        transform:translateY(-.5rem);
     }
 
     100% {
