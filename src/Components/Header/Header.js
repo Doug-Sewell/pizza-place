@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Header.module.css';
+import classes from './Header.module.scss';
 
 import Button from '../../UI/Button/Button';
 //Signage phto for background here: https://www.pexels.com/photo/red-pizza-neon-signage-2914550/
