@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import BackgroundPhoto from './assets/header/header-background.jpg';
-import PracticeNav from './Components/Practice-Nav/Practice-Nav';
-
 
 class App extends Component {
 
@@ -24,7 +22,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PracticeNav />
         <Header
           primary={this.state.header.headerPrimary}
           secondary={this.state.header.headerSecondary}

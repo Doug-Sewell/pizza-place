@@ -16,7 +16,7 @@ const header = props => {
         <header
             style={backgroundStyle}
             className={classes.Header}>
-            <div className={classes.TextBox}>
+            <div className={classes.HeaderTextBox}>
                 <h1 className={classes.HeaderPrimary}>
                     <span className={classes.HeaderPrimaryMain}>{props.primary}</span>
                     <span className={classes.HeaderPrimarySub}>{props.secondary}</span>
