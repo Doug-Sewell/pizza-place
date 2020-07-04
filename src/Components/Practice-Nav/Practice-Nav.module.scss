@@ -6,16 +6,27 @@ $color-text-light:#eee;
 
 $width-button:15rem;
 
-nav {
-    margin:3rem;
-    background-color:$color-primary;
-
-    //Clearfix:
+@mixin clearfix {
     &::after {
         content:"";
         clear:both;
         display:table;
     }
+}
+
+@mixin style-link-text($color) {
+    text-decoration:none;
+    text-transform: uppercase;
+    color: $color;
+}
+
+nav {
+    margin:3rem;
+    background-color:$color-primary;
+
+    //Clearfix:
+    @include clearfix;
+
 }
 
 .navigation {
@@ -30,10 +41,9 @@ nav {
             margin:0;
         }
 
-        a:link {
-            text-decoration:none;
-            text-transform: uppercase;
-            color: $color-text-dark;
+        a:link,
+        a:visited {
+            @include style-link-text($color-text-dark);
         }
     }
 
@@ -43,22 +53,20 @@ nav {
     float:right;
 }
 
-.btnMain:link,
-.btnHot:link,
-.btnMain:visited,
-.btnHot:visited{
+%btn-placeholder {
     padding:1rem;
     display:inline-block;
     text-align:center;
     border-radius:10rem;
-    text-decoration:none;
-    text-transform: uppercase;
     width:$width-button;
-    color: $color-text-light
+    @include style-link-text($color-text-light);
+
 }
 
 .btnMain {
-    &:link{
+    &:link,
+    &:visited{
+        @extend %btn-placeholder;
         background-color:$color-secondary;
     }
 
@@ -68,7 +76,9 @@ nav {
 }
 
 .btnHot {
-    &:link{
+    &:link,
+    &:visited{
+        @extend %btn-placeholder;
         background-color:$color-tertiary;
     }
 
